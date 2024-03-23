@@ -1,0 +1,92 @@
+/* index.css */
+
+/* Background styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .app-container {
+    width: 90%; /* Adjust the width as needed */
+    max-width: 250px; /* Decreased max-width for smaller form */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-label {
+    margin-bottom: 5px;
+  }
+  
+  .input-change {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .register-btn,
+  .login-btn {
+    padding: 8px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Mobile (up to 767px) */
+  @media only screen and (max-width: 767px) {
+    .app-container {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
+  /* Tablet (768px to 991px) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .app-container {
+      max-width: 80%; /* Adjust the max-width for tablet view */
+    }
+  }
+  
+  /* Desktop (992px and above) */
+  @media only screen and (min-width: 992px) {
+    .app-container {
+      max-width: 50%; /* Adjust the max-width for desktop view */
+    }
+  }
+  
+  .success .input-change {
+    /* Define your styles for input fields after successful submission */
+    border-color: green; /* Change border color to green */
+  }
+  

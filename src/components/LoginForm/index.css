@@ -1,0 +1,88 @@
+/* Default styles for all screen sizes */
+.empForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray; /* Light gray background */
+  }
+  
+  .section {
+    text-align: start;
+    background-color: #ffffff; /* White background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a slight elevation effect */
+    max-width: 400px; /* Max width of the form section */
+    width: 100%; /* Full width */
+  }
+  
+  .head {
+    margin-bottom: 20px;
+    text-align: center;
+    color:brown;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .input-label {
+    margin-bottom: 5px;
+    color: #333; /* Dark gray text color */
+  }
+  
+  .input-change {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: calc(100% - 16px); /* Adjusted width */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+  }
+  
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .submit-button, .create-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Remove width property to allow button to take its natural width */
+  }
+  
+  
+  
+  
+  
+  .create-button {
+    background-color: #28a745; /* Green button color */
+    margin-top: 10px;
+  }
+  
+  .error-msg {
+    color: red;
+  }
+  
+  /* Tablet and desktop styles */
+  @media only screen and (min-width: 768px) {
+    .section {
+      max-width: 500px; /* Increased max width for larger screens */
+    }
+  }
+  
+  /* Desktop styles */
+  @media only screen and (min-width: 1024px) {
+    .section {
+      max-width: 600px; /* Increased max width for larger screens */
+    }
+  }
+  
